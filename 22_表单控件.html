@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width 表示宽度是设备屏幕的宽度.
+         initial-scale=1.0 表示初始的缩放比例。
+         shrink-to-fit=no 自动适应手机屏幕的宽度。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>22_表单控件</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- Bootstrap4 核心 JavaScript 文件 -->
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Bootstrap4 支持以下表单控件 -->
+    <!-- input
+        textarea
+        checkbox
+        radio
+        select -->
+
+    <!-- Bootstrap Input -->
+    <!-- Bootstrap 支持所有的 HTML5 输入类型: text, password, datetime, datetime-local, 
+        date, month, time, week, number, email, url, search, tel, 以及 color -->
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="usr">用户名:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="pwd">密码:</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Bootstrap textarea -->
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="comment">评论:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap 复选框(checkbox) -->
+    <!-- 默认垂直分布 -->
+    <!-- 使用 .form-check-inline 类可以让选项显示在同一行上 -->
+    <div class="container">
+        <form>
+            功能:
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="1">人工智能
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="2">数据分析
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="3">软件开发
+                </label>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap 单选框(Radio) -->
+    <!-- 使用 .radio-inline 类可以让选项显示在同一行上 -->
+    <div class="container">
+        <form>性别:
+            <label class="radio">
+                <input type="radio" name="optradio">男</label>
+
+            <label class="radio">
+                <input type="radio" name="optradio">女</label>
+
+            <label class="radio">
+                <input type="radio" name="optradio" disabled>保密</label>
+
+        </form>
+    </div>
+
+
+    <!-- Bootstrap select 下拉菜单 -->
+    <div class="container">
+        <p>以下表单包含了两个下拉菜单 (select 列表):</p>
+        <form>
+            <div class="form-group">
+                <label for="sel1">单选下拉菜单:</label>
+                <select class="form-control" id="sel1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <br>
+                <label for="sel2">多选下拉菜单(按住 ctrl 键，可以选取多个选项):</label>
+                <select multiple class="form-control" id="sel2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width 表示宽度是设备屏幕的宽度.
+         initial-scale=1.0 表示初始的缩放比例。
+         shrink-to-fit=no 自动适应手机屏幕的宽度。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>20_导航栏</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- Bootstrap4 核心 JavaScript 文件 -->
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 小屏幕上水平导航栏会切换为垂直的 -->
+    <!-- 使用 .navbar 类来创建一个标准的导航栏 -->
+    <!-- .navbar-expand-xl|lg|md|sm 类来创建响应式的导航栏 (大屏幕水平铺开，小屏幕垂直堆叠) -->
+    <!-- 导航栏上的选项可以使用 <ul> 元素并添加 class="navbar-nav" 类 -->
+    <!-- 在 <li> 元素上添加 .nav-item 类， <a> 元素上使用 .nav-link 类 -->
+
+
+    <!-- 垂直导航栏 -->
+    <!-- 通过删除 .navbar-expand-xl|lg|md|sm 类来创建垂直导航栏: -->
+
+
+    <!-- 不同颜色导航栏 -->
+    <!-- .bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark 和 .bg-light -->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-light">
+        <!-- 品牌logo -->
+        <a class="navbar-brand" href="#">Logo</a>
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+
+        <!-- 搜索表单 -->
+        <form class="form-inline">
+            <input class="form-control" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+
+    </nav>
+
+
+</body>
+
+</html>

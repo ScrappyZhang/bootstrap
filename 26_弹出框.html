@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width 表示宽度是设备屏幕的宽度.
+         initial-scale=1.0 表示初始的缩放比例。
+         shrink-to-fit=no 自动适应手机屏幕的宽度。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>26_弹出框</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- Bootstrap4 核心 JavaScript 文件 -->
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            // 弹出框显示
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 鼠标点击后显示，可有标题，可有内容 -->
+    <div class="container">
+        <h3>弹出框实例</h3>
+        <a href="#" data-toggle="popover" title="弹出框信息标题" data-content="弹出框信息内容：你吃饭的时候是先烤鱼还是先烤肉？不应该是先考虑我么？">点我显示弹出框</a>
+    </div>
+
+    <!-- 默认情况下弹出框显示在元素右侧 -->
+    <!-- 使用 data-placement 属性来设定弹出框显示的方向: top, bottom, left 或 right -->
+    <div class="container">
+        <h3>弹出框位置实例</h3>
+        <a href="#" data-toggle="popover" title="弹出框信息标题" data-placement="bottom" data-content="弹出框信息内容：你吃饭的时候是先烤鱼还是先烤肉？不应该是先考虑我么？">点我显示下面弹出框</a>
+    </div>
+
+    <!-- 关闭弹出框 -->
+    <!-- 默认情况下，弹出框在再次点击指定元素后就会关闭 -->
+    <!-- 使用 data-trigger="focus" 属性来设置在鼠标点击元素外部区域来关闭弹出框 -->
+    <div class="container">
+            <h3>弹出框关闭实例</h3>
+            <a href="#" data-toggle="popover" title="弹出框信息标题" data-trigger="focus" data-placement="bottom" data-content="弹出框信息内容：你吃饭的时候是先烤鱼还是先烤肉？不应该是先考虑我么？">点击其他地方可关闭信息显示</a>
+    </div>
+    <!-- 鼠标移动到元素上显示，移除后消失的效果 使用 data-trigger 属性，并设置值为 "hover“ -->
+    <div class="container">
+            <h3>弹出框关闭实例2</h3>
+            <a href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="弹出框信息内容：你吃饭的时候是先烤鱼还是先烤肉？不应该是先考虑我么？">点击其他地方可关闭信息显示</a>
+    </div>
+
+
+</body>
+
+</html>

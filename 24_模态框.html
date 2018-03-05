@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width 表示宽度是设备屏幕的宽度.
+         initial-scale=1.0 表示初始的缩放比例。
+         shrink-to-fit=no 自动适应手机屏幕的宽度。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>24_模态框</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- Bootstrap4 核心 JavaScript 文件 -->
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 模态框（Modal）是覆盖在父窗体上的子窗体 -->
+    <!-- 通常，目的是显示来自一个单独的源的内容，可以在不离开父窗体的情况下有一些互动 -->
+
+    <!-- 创建模态框 -->
+    <!-- 按钮：用于打开模态框 -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        打开模态框
+    </button>
+
+    <!-- 模态框 -->
+    <!-- fade 淡入淡出 modal 模态框 -->
+    <div class="modal fade" id="myModal">
+        <!-- 模态对话框大小样式-->
+        <!-- 模态框尺寸 -->
+        <!-- 添加 .modal-sm 类来创建一个小模态框，.modal-lg 类可以创建一个大模态框 -->
+        <!-- 尺寸类放在 <div>元素的 .modal-dialog 类后 -->
+        <div class="modal-dialog modal-lg">
+            <!-- 模态框内容 -->
+            <div class="modal-content">
+
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">模态框头部</h4>
+                    <!-- data-dismiss="modal" 关闭模态框 -->
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    模态框显示主体内容..
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

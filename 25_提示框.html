@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width 表示宽度是设备屏幕的宽度.
+         initial-scale=1.0 表示初始的缩放比例。
+         shrink-to-fit=no 自动适应手机屏幕的宽度。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>25_提示框</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- Bootstrap4 核心 JavaScript 文件 -->
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            // 提示框显示
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 提示框是一个小小的弹窗，在鼠标移动到元素上显示，鼠标移到元素外就消失 -->
+    <h4>提示框是一个小小的弹窗，在鼠标移动到元素上显示，鼠标移到元素外就消失。</h4>
+    <!-- 通过向元素添加 data-toggle="tooltip" 来来创建提示框 -->
+    <!-- 提示框要写在 jQuery 的初始化代码里: 然后在指定的元素上调用 tooltip() 方法。 -->
+    <div class="container">
+        <strong>提示框实例</strong>
+        <hr>
+        <a href="#" data-toggle="tooltip" title="我是提示内容!">鼠标移动到我这</a>
+    </div>
+
+    <!-- 指定提示框的位置 -->
+    <!-- 默认情况下提示框显示在元素上方 -->
+    <!-- 使用 data-placement 属性来设定提示框显示的方向: top, bottom, left 或 right -->
+    <div class="container">
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="我显示在下方!">鼠标移动到我这</a>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width 表示宽度是设备屏幕的宽度.
+         initial-scale=1.0 表示初始的缩放比例。
+         shrink-to-fit=no 自动适应手机屏幕的宽度。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>09_信息提示框</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 提示框可以使用 .alert 类  默认无背景-->
+    <!-- <div class="alert"> -->
+
+
+    <!-- 添加背景  默认背景带圆角-->
+    <!-- .alert-success, .alert-info, .alert-warning, .alert-danger, .alert-primary, .alert-secondary, .alert-light 或 .alert-dark 类 -->
+    <!-- 例： <div class="alert alert-success"> -->
+
+
+    <!-- 提示框添加链接 -->
+    <!-- 在链接的标签上添加 alert-link 类来设置匹配提示框颜色的链接 -->
+
+
+    <!-- 关闭提示框及触发按钮 -->
+    <!-- div中增加alert-dismissable类 -->
+    <!-- 在button中增加close类 -->
+    <!-- &times; (×) 是 HTML 实体字符，来表示关闭操作，而不是字母 "x"。 -->
+    <!-- <div class="alert alert-success alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>成功!</strong> 指定操作成功提示信息。
+    </div> -->
+
+
+    <!-- 提示框动画 -->
+    <!-- .fade 和 .show 类用于设置提示框在关闭时的淡出和淡入效果 -->
+    <!-- <div class="alert alert-danger alert-dismissable fade show"> -->
+
+    <div class="alert alert-danger alert-dismissable fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>成功!</strong> 指定操作成功提示信息。
+    </div>
+</body>
+
+</html>

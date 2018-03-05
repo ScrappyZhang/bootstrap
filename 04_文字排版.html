@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width 表示宽度是设备屏幕的宽度.
+         initial-scale=1.0 表示初始的缩放比例。
+         shrink-to-fit=no 自动适应手机屏幕的宽度。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04_文字排版</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 默认字体 -->
+    <!-- Bootstrap 4 默认的 font-size 为 16px, line-height 为 1.5 -->
+    <!-- 默认的 font-family 为 "Helvetica Neue", Helvetica, Arial, sans-serif -->
+    <!-- <p> 元素 margin-top: 0 、 margin-bottom: 1rem (16px) -->
+    <div class="container">
+        <!-- h1-h6 -->
+        <h1>h1 Bootstrap 标题 (2.5rem = 40px)</h1>
+        <h2>h2 Bootstrap 标题 (2rem = 32px)</h2>
+        <h3>h3 Bootstrap 标题 (1.75rem = 28px)</h3>
+        <h4>h4 Bootstrap 标题 (1.5rem = 24px)</h4>
+        <h5>h5 Bootstrap 标题 (1.25rem = 20px)</h5>
+        <h6>h6 Bootstrap 标题 (1rem = 16px)</h6>
+        <p>
+            p Bootstrap 段落margin-top: 0 、 margin-bottom: 1rem (16px)
+        </p>
+
+        <!-- Display 标题类 -->
+        <!-- .display-1, .display-2, .display-3, .display-4 -->
+        <h1>Display 标题</h1>
+        <p>Display 标题可以输出更大更粗的字体样式。</p>
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+
+        <!-- small标签  用于创建字号更小的颜色更浅的文本 -->
+        <h1>更小文本标题</h1>
+        <p>small 元素用于字号更小的颜色更浅的文本:</p>
+        <h1>h1 标题
+            <small>副标题</small>
+        </h1>
+        <h2>h2 标题
+            <small>副标题</small>
+        </h2>
+        <h3>h3 标题
+            <small>副标题</small>
+        </h3>
+        <h4>h4 标题
+            <small>副标题</small>
+        </h4>
+        <h5>h5 标题
+            <small>副标题</small>
+        </h5>
+        <h6>h6 标题
+            <small>副标题</small>
+        </h6>
+
+
+        <!-- mark标签  黄色背景及有一定的内边距 -->
+        <h1>高亮文本</h1>
+        <p>使用 mark 元素来
+            <mark>高亮</mark> 文本。</p>
+
+
+        <!-- abbr标签 显示在文本底部的一条虚线边框: -->
+        <!-- 当鼠标置于该元素时，会显示title内容 -->
+        <h1>Abbreviations</h1>
+        <p>The abbr element is used to mark up an abbreviation or acronym:</p>
+        <p>The
+            <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+
+        <!-- blockquote    引用的内容 -->
+        <blockquote class="blockquote">
+            <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF
+                works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+                globally.
+            </p>
+            <footer class="blockquote-footer">From WWF's website</footer>
+        </blockquote>
+
+
+        <!-- dl标签 二层无序列表标签 -->
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+
+
+        <!-- code标签  代码格式  一般颜色为E8549D -->
+        <p>以下 HTML 元素:
+            <code>span</code>,
+            <code>section</code>, 和
+            <code>div</code> 用于定义部分文档内容。
+        </p>
+
+
+        <!-- kbd标签 黑色背景，白色字体显示-->
+        <p>Use
+            <kbd>ctrl + p</kbd> to open the Print dialog box.
+        </p>
+
+
+        <!-- pre标签 整个文本缩进 文本之间的空格会被显示、换行会生效-->
+        <pre>
+                Text in a pre element
+                is displayed in a fixed-width
+                font, and it preserves
+                both      spaces and
+                line breaks.
+        </pre>
+
+        <!-- 
+
+            .font-weight-bold	加粗文本	
+            .font-weight-normal	普通文本	
+            .font-weight-light	更细的文本	
+            .font-italic	斜体文本	
+            .lead	让段落更突出	
+            .small	指定更小文本 (为父元素的 85% )	
+            .text-left	左对齐	
+            .text-center	居中	
+            .text-right	右对齐	
+            .text-justify	设定文本对齐,段落中超出屏幕部分文字自动换行	
+            .text-nowrap	段落中超出屏幕部分不换行	
+            .text-lowercase	设定文本小写	
+            .text-uppercase	设定文本大写	
+            .text-capitalize	设定单词首字母大写	
+            .initialism	显示在 <abbr> 元素中的文本以小号字体展示，且可以将小写字母转换为大写字母	
+            .list-unstyled	移除默认的列表样式，列表项中左对齐 ( <ul> 和 <ol> 中)。 这个类仅适用于直接子列表项 (如果需要移除嵌套的列表项，你需要在嵌套的列表中使用该样式)	
+            .list-inline	将所有列表项放置同一行	
+            .pre-scrollable	使 <pre> 元素可滚动，代码块区域最大高度为340px,一旦超出这个高度,就会在Y轴出现滚动条
+         -->
+    </div>
+</body>
+
+</html>

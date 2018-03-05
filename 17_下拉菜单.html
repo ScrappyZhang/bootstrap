@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width 表示宽度是设备屏幕的宽度.
+         initial-scale=1.0 表示初始的缩放比例。
+         shrink-to-fit=no 自动适应手机屏幕的宽度。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>17_下拉菜单</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap4 核心 JavaScript 文件 -->
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- .dropdown 类用来指定一个下拉菜单 -->
+    <!-- 我们可以使用一个按钮或链接来打开下拉菜单，
+        按钮或链接需要添加 .dropdown-toggle 和 data-toggle="dropdown" 属性 -->
+
+
+    <!-- 下拉菜单中的分割线 -->
+    <!-- .dropdown-divider 类用于在下拉菜单中创建一个水平的分割线 -->
+    <!-- <div class="dropdown-divider"></div> -->
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu">
+            <!-- 添加下拉菜单标题 -->
+            <div class="dropdown-header">Dropdown header 1</div>
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <!-- 添加水平分割线 -->
+            <div class="dropdown-divider"></div>
+            <!-- 添加下拉菜单标题 -->
+            <div class="dropdown-header">Dropdown header 1</div>
+            <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+    </div>
+
+
+    <!-- 下拉菜单中的可用项与禁用项 -->
+    <!-- .active 类会让下拉菜单的选项高亮显示 (添加蓝色背景) -->
+    <!-- 如果要禁用下拉菜单的选项，可以使用.disabled 类 -->
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Normal</a>
+            <!-- 高亮显示 -->
+            <a class="dropdown-item active" href="#">Active</a>
+            <!-- 禁用 -->
+            <a class="dropdown-item disabled" href="#">Disabled</a>
+        </div>
+    </div>
+
+    <!-- 下拉菜单的定位 -->
+    <!-- 在元素上的 .dropdown-menu 类后添加 .dropdown-menu-right 类 -->
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+        <!-- 右边框对齐 -->
+        <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Normal</a>
+            <a class="dropdown-item active" href="#">Active</a>
+            <a class="dropdown-item disabled" href="#">Disabled</a>
+        </div>
+    </div>
+    <!-- 指定向上弹出的下拉菜单 -->
+    <!-- 将 <div> 元素的 class="dropdown" 替换为 "dropup": -->
+    <div class="dropup">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Normal</a>
+            <a class="dropdown-item active" href="#">Active</a>
+            <a class="dropdown-item disabled" href="#">Disabled</a>
+        </div>
+    </div>
+
+    <!-- 按钮中设置下拉菜单 -->
+    <div class="btn-group">
+            <button type="button" class="btn btn-primary">Sony</button>
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+              <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Tablet</a>
+              <a class="dropdown-item" href="#">Smartphone</a>
+            </div>
+    </div>
+</body>
+
+</html>

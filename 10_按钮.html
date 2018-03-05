@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width 表示宽度是设备屏幕的宽度.
+         initial-scale=1.0 表示初始的缩放比例。
+         shrink-to-fit=no 自动适应手机屏幕的宽度。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10_按钮</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 常见的按钮样式 -->
+    <!-- 
+    <button type="button" class="btn">基本按钮</button>
+    <button type="button" class="btn btn-primary">主要按钮</button>
+    <button type="button" class="btn btn-secondary">次要按钮</button>
+    <button type="button" class="btn btn-success">成功</button>
+    <button type="button" class="btn btn-info">信息</button>
+    <button type="button" class="btn btn-warning">警告</button>
+    <button type="button" class="btn btn-danger">危险</button>
+    <button type="button" class="btn btn-dark">黑色</button>
+    <button type="button" class="btn btn-light">浅色</button>
+    <button type="button" class="btn btn-link">链接</button> 
+    -->
+
+
+    <!-- 按钮类可用于 <a>, <button>, 或 <input> 元素上 -->
+    <!-- 
+    <a href="#" class="btn btn-info" role="button">链接按钮</a>
+    <button type="button" class="btn btn-info">按钮</button>
+    <input type="button" class="btn btn-info" value="输入框按钮">
+    <input type="submit" class="btn btn-info" value="提交按钮"> 
+    -->
+
+
+    <!-- 按钮设置边框 -->
+    <button type="button" class="btn btn-outline-primary">主要按钮</button>
+    <button type="button" class="btn btn-outline-secondary">次要按钮</button>
+    <button type="button" class="btn btn-outline-success">成功</button>
+    <button type="button" class="btn btn-outline-info">信息</button>
+    <button type="button" class="btn btn-outline-warning">警告</button>
+    <button type="button" class="btn btn-outline-danger">危险</button>
+    <button type="button" class="btn btn-outline-dark">黑色</button>
+    <button type="button" class="btn btn-outline-light text-dark">浅色</button>
+
+
+    <!-- 不同大小的按钮 -->
+    <!-- btn-lg   btn-sm -->
+    <button type="button" class="btn btn-primary btn-lg">大号按钮</button>
+    <button type="button" class="btn btn-primary">默认按钮</button>
+    <button type="button" class="btn btn-primary btn-sm">小号按钮</button>
+
+
+    <!-- 块级按钮 -->
+    <!-- .btn-block 类可以设置块级按钮 -->
+    <button type="button" class="btn btn-primary btn-block">按钮 1</button>
+
+
+    <!-- 激活和禁用的按钮 -->
+    <!-- .active 类可以设置按钮是可用的， disabled 属性可以设置按钮是不可点击的 -->
+    <button type="button" class="btn btn-primary active">点击后的按钮</button>
+    <button type="button" class="btn btn-primary" disabled>禁止点击的按钮</button>
+    <a href="#" class="btn btn-primary disabled">禁止点击的链接</a>
+</body>
+
+</html>

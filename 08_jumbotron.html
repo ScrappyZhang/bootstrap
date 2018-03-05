@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width 表示宽度是设备屏幕的宽度.
+         initial-scale=1.0 表示初始的缩放比例。
+         shrink-to-fit=no 自动适应手机屏幕的宽度。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>08_jumbotron</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Jumbotron（超大屏幕）会创建一个大的灰色背景框，里面可以设置一些特殊的内容和信息 -->
+    <!-- 默认灰色背景框有圆角 -->
+    <div class="jumbotron">
+        <h1>菜鸟教程</h1>
+        <p>学的不仅是技术，更是梦想！！！</p>
+    </div>
+    <!-- 若想创建没有圆角的 -->
+    <!-- 可以在 .jumbotron-fluid 类里头的 div添加 .container 或 .container-fluid 类来实现 -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>菜鸟教程</h1>
+            <p>学的不仅是技术，更是梦想！！！</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width 表示宽度是设备屏幕的宽度.
+         initial-scale=1.0 表示初始的缩放比例。
+         shrink-to-fit=no 自动适应手机屏幕的宽度。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03_网格类</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 
+        .col- 针对所有设备
+        .col-sm- 平板 - 屏幕宽度等于或大于 576px
+        .col-md- 桌面显示器 - 屏幕宽度等于或大于 768px)
+        .col-lg- 大桌面显示器 - 屏幕宽度等于或大于 992px)
+        .col-xl- 超大桌面显示器 - 屏幕宽度等于或大于 1200px)
+     -->
+    <!-- 第一个例子：控制列的宽度及在不同的设备上如何显示 -->
+    <!-- ( .col-*-* 类中设置)。 第一个星号 (*) 表示响应的设备: sm, md, lg 或 xl, 第二个星号 (*) 表示一个数字, 同一行的数字相加为 12 -->
+    <div class="row">
+        <div class="col">第一行，只有一列</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">第二行第一列</div>
+        <div class="col-sm-3">第二行第二列</div>
+        <div class="col-sm-5">第二行第三列</div>
+    </div>
+
+    <!-- 第二个例子：或让 Bootstrap 者自动处理布局 -->
+    <!-- 不在每个 col 上添加数字，让 bootstrap 自动处理布局，同一行的每个列宽度相等 -->
+    <div class="row">
+        <div class="col-sm">第三行：自动处理布局</div>
+        <div class="col-sm">第三行：自动处理布局</div>
+        <div class="col-sm">第三行：自动处理布局</div>
+    </div>
+</body>
+
+</html>
